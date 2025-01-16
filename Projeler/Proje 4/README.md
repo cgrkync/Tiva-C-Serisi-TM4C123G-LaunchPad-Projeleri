@@ -105,5 +105,6 @@ Bu proje, **Tiva C Serisi TM4C123G LaunchPad** ve **SharpDevelop** ortamı kulla
 4. **Çalıştır:**
    - SharpDevelop üzerinden saat ve metin bilgisi gir.
    - LCD'de ve SharpDevelop'ta bilgilerin senkronize olarak güncellendiğini gözlemle.
-
 ---
+<img width="432" alt="image" src="https://github.com/user-attachments/assets/cc353177-a796-4678-8aab-b9025833c01e" />
+
