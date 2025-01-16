@@ -90,8 +90,4 @@ Projeyi çalıştırmak için aşağıdaki donanım ve yazılımlar gereklidir:
 
 ---
 
-## 📞 İletişim ve Katkılar
-
-- Bu proje, Tiva C LaunchPad ve 16x2 LCD üzerinde çalışmak isteyenler için hazırlanmıştır.
-- Geliştirmek veya katkıda bulunmak için pull request gönderebilirsiniz!
 
