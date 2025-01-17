@@ -31,20 +31,20 @@ Bu proje, **Tiva C Serisi TM4C123G LaunchPad** ile **SharpDevelop** arasında se
 ## ⚙️ Donanım Bağlantıları
 
 ### LCD Bağlantıları:
-| LCD      | TM4C123G LaunchPad       |
-|----------|--------------------------|
-| VSS      | GND                      |
-| VDD      | VBUS                     |
-| V0       | Potentiometer            |
-| RS       | PB0                      |
-| RW       | GND                      |
-| E        | PB1                      |
-| D4       | PB4                      |
-| D5       | PB5                      |
-| D6       | PB6                      |
-| D7       | PB7                      |
-| A        | 5V                       |
-| K        | GND                      |
+| LCD Pin  | TM4C123G LaunchPad Pin |
+|----------|-------------------------|
+| VSS      | GND                     |
+| VDD      | VBUS                    |
+| V0       | Potansiyometre          |
+| RS       | PB0                     |
+| RW       | GND                     |
+| E        | PB1                     |
+| D4       | PB4                     |
+| D5       | PB5                     |
+| D6       | PB6                     |
+| D7       | PB7                     |
+| A        | 5V                      |
+| K        | GND                     |
 
 ---
 
