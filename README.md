@@ -14,7 +14,7 @@ Bu repo, **Tiva C Serisi TM4C123G LaunchPad** kullanılarak geliştirilmiş çe�
    - **Kullanılan Donanım:**
      - Tiva C Serisi LaunchPad
      - 16x2 LCD ekran
-   - [Detaylar için buraya tıklayın.]()
+   - [Detaylar için buraya tıklayın.](Projeler/Proje 2/README.md)
 
 ---
 
