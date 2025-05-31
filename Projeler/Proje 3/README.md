@@ -1,3 +1,108 @@
+
+---
+
+## 🇬🇧 ENGLISH 
+
+# Serial Port Clock Display with Tiva C Series TM4C123G LaunchPad
+
+This project displays clock data on a 16x2 LCD screen by enabling serial communication between **Tiva C Series TM4C123G LaunchPad** and **SharpDevelop**. The user sends time data from SharpDevelop, and the Tiva C begins counting from the specified time.
+
+---
+
+## 📋 Project Summary
+
+- **Clock Setup:**
+  - The user sends time information (e.g., 12:34:56) via the SharpDevelop interface.
+  - Tiva C receives and processes this data and displays the time on the 16x2 LCD.
+  - The clock starts counting from the received value and updates every second.
+
+---
+
+## 🛠 Requirements
+
+### Hardware:
+- Tiva C Series TM4C123G LaunchPad  
+- 16x2 LCD Display  
+- Potentiometer (for LCD contrast adjustment)  
+- Jumper wires  
+
+### Software:
+- **Code Composer Studio (CCS)**  
+- **SharpDevelop**  
+- **TivaWare API Library**
+
+---
+
+## ⚙️ Hardware Connections
+
+### LCD Connections:
+
+| LCD Pin  | TM4C123G LaunchPad Pin |
+|----------|-------------------------|
+| VSS      | GND                     |
+| VDD      | VBUS                    |
+| V0       | Potentiometer           |
+| RS       | PB0                     |
+| RW       | GND                     |
+| E        | PB1                     |
+| D4       | PB4                     |
+| D5       | PB5                     |
+| D6       | PB6                     |
+| D7       | PB7                     |
+| A        | 5V                      |
+| K        | GND                     |
+
+---
+
+## 📂 Project Logic
+
+1. **Communication with SharpDevelop:**
+   - The user sends time data in `HH:MM:SS` format through the SharpDevelop interface.
+   - Tiva C receives the time and displays it on the first row of the LCD.
+
+2. **Time Counting:**
+   - A timer module on the Tiva C increments the time every second.
+   - The LCD continuously displays the updated time.
+
+---
+
+## 📄 File Structure
+
+- **main.c:** Main control code for Tiva C  
+- **lcd.h:** Header file for LCD control  
+- **lcd.c:** Functions to control the LCD via GPIO  
+- **uart.c:** UART communication functions  
+- **sharpdevelop_ui.sln:** Project file for the SharpDevelop interface  
+
+---
+
+## 🚀 Setup and Execution
+
+1. **Connect the Hardware:**
+   Connect the LCD to the Tiva C LaunchPad according to the table above.
+
+2. **Compile and Upload the Code:**
+   - Open the project in Code Composer Studio.  
+   - Compile and upload it to the Tiva C.  
+
+3. **SharpDevelop Interface:**
+   - Open and run the SharpDevelop project.  
+   - Select the correct COM port for the connected Tiva C.  
+
+4. **Run:**
+   - Send the time data from SharpDevelop.  
+   - Observe the clock starting and counting on the LCD.
+
+
+
+
+---
+
+## 🇹🇷 TÜRKÇE 
+
+---
+
+
 # Tiva C Serisi TM4C123G LaunchPad ile Seri Port Saat Gösterimi
 
 Bu proje, **Tiva C Serisi TM4C123G LaunchPad** ile **SharpDevelop** arasında seri haberleşme sağlayarak saat verilerini LCD ekran üzerinde göstermeyi amaçlar. Kullanıcı, SharpDevelop üzerinden saat bilgilerini gönderir ve Tiva C üzerinde saat saymaya başlar.
