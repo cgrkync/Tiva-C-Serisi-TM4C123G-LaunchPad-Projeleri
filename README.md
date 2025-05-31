@@ -1,4 +1,8 @@
-EN
+---
+
+## 🇬🇧 ENGLISH VERSION
+
+
 # Tiva C Series TM4C123G LaunchPad Projects
 
 This repository contains various projects developed using the **Tiva C Series TM4C123G LaunchPad**. The projects focus on microcontroller applications such as LCD usage, floating point mathematical operations, hibernate mode, and serial communication.
@@ -95,7 +99,12 @@ This repository contains various projects developed using the **Tiva C Series TM
 
 
 
-TR
+---
+
+## 🇹🇷 TÜRKÇE BÖLÜM
+
+---
+
 # Tiva C Serisi TM4C123G LaunchPad Projeleri
 
 Bu repo, **Tiva C Serisi TM4C123G LaunchPad** kullanılarak geliştirilmiş çeşitli projeleri içermektedir. Projeler, mikrodenetleyici uygulamaları, LCD kullanımı, floating point matematiksel işlemler, hibernate modu ve seri haberleşme gibi konulara odaklanmaktadır.
