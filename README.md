@@ -1,3 +1,101 @@
+EN
+# Tiva C Series TM4C123G LaunchPad Projects
+
+This repository contains various projects developed using the **Tiva C Series TM4C123G LaunchPad**. The projects focus on microcontroller applications such as LCD usage, floating point mathematical operations, hibernate mode, and serial communication.
+
+---
+
+## 📋 Project List
+
+### 1. **Using a 16x2 LCD**
+- **Description:** A project designed to learn the basics of using a **16x2 LCD screen** with Tiva C. The LCD is controlled via GPIO pins.
+- **Features:**
+  - The LCD operates in 4-bit mode.
+  - Text display and basic LCD commands were tested.
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+  - 16x2 LCD display  
+- [Click here for more details.](./Projeler/Proje%201/README.md)
+
+---
+
+### 2. **Basic Clock Application with Microcontroller**
+- **Description:** A clock application that starts from **00:00:00** and continuously increments seconds using a timer on the microcontroller.
+- **Features:**
+  - Seconds are counted using the Timer module.
+  - Time (hours, minutes, seconds) is displayed on the LCD.
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+  - 16x2 LCD display  
+- [Click here for more details.](./Projeler/Proje%202/README.md)
+
+---
+
+### 3. **Sending Time via Serial Port**
+- **Description:** Time is sent from SharpDevelop via serial communication and displayed on the LCD.
+- **Features:**
+  - Time information is sent from SharpDevelop.
+  - Time is displayed on the LCD and updated continuously.
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+  - 16x2 LCD display  
+- [Click here for more details.](./Projeler/Proje%203/README.md)
+
+---
+
+### 4. **Sending Time and Text via Serial Port**
+- **Description:** Both time and text information are sent to the LCD via serial communication using SharpDevelop.
+- **Features:**
+  - Time and temperature information is shown on the first row of the LCD.
+  - Custom text entered in SharpDevelop is displayed on the second row.
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+  - LM35DZ temperature sensor  
+  - 16x2 LCD display  
+- [Click here for more details.](./Projeler/Proje%204/README.md)
+
+---
+
+### 5. **Hibernate Mode Application**
+- **Description:** The microcontroller is set to low-power hibernate mode, and wake-up is performed via RTC or GPIO.
+- **Features:**
+  - GPIO states are preserved during hibernation.
+  - The system wakes up after a set time using the RTC (Real Time Clock).
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+  - External wake-up signal (e.g., button)  
+- [Click here for more details.](./Projeler/Proje%205/README.md)
+
+---
+
+### 6. **Floating Point Operations**
+- **Description:** Mathematical operations are performed using the Floating Point Unit (FPU), and a sine wave is calculated.
+- **Features:**
+  - Floating-point operations are accelerated using the FPU.
+  - 100 sample points are calculated for the sine wave.
+- **Hardware Used:**
+  - Tiva C Series LaunchPad  
+- [Click here for more details.](./Projeler/Proje%206/README.md)
+
+---
+
+## 🚀 How to Use?
+
+1. Navigate to the related folder for each project and check the **README.md** file.
+2. To download and run the code:
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/cgrkync/Tiva-C-Serisi-TM4C123G-LaunchPad-Projeleri.git
+     ```
+   - Go to the corresponding project folder and review the source code.
+3. Use **Code Composer Studio** to compile and upload the code to your Tiva C LaunchPad.
+
+
+
+
+
+
+TR
 # Tiva C Serisi TM4C123G LaunchPad Projeleri
 
 Bu repo, **Tiva C Serisi TM4C123G LaunchPad** kullanılarak geliştirilmiş çeşitli projeleri içermektedir. Projeler, mikrodenetleyici uygulamaları, LCD kullanımı, floating point matematiksel işlemler, hibernate modu ve seri haberleşme gibi konulara odaklanmaktadır.
