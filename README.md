@@ -1,6 +1,6 @@
 ---
 
-## 🇬🇧 ENGLISH VERSION
+## 🇬🇧 ENGLISH 
 
 
 # Tiva C Series TM4C123G LaunchPad Projects
@@ -101,7 +101,7 @@ This repository contains various projects developed using the **Tiva C Series TM
 
 ---
 
-## 🇹🇷 TÜRKÇE BÖLÜM
+## 🇹🇷 TÜRKÇE 
 
 ---
 
