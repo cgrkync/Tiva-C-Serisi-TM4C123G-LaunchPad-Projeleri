@@ -1,3 +1,132 @@
+---
+
+## 🇬🇧 ENGLISH 
+
+# Serial Communication with SharpDevelop and Tiva C Series TM4C123G LaunchPad
+
+This project includes a serial communication application developed using the **Tiva C Series TM4C123G LaunchPad** and **SharpDevelop**. The goal is to synchronize clock and text data between the LCD and SharpDevelop, as well as to measure temperature using the **LM35DZ temperature sensor**.
+
+---
+
+## 📋 Project Summary
+
+- **Clock Function:**
+  - The user enters a time value via the SharpDevelop interface.
+  - This time is received by Tiva C and displayed on a 16x2 LCD screen, and starts counting.
+  - The current time is also continuously shown in the SharpDevelop interface.
+
+- **Temperature Measurement:**
+  - The **LM35DZ temperature sensor** is read using the ADC module of the Tiva C.
+  - The measured temperature is displayed on both the LCD and the SharpDevelop interface.
+
+- **Text Transmission:**
+  - When the user enters a message in SharpDevelop, it is displayed on the second row of the LCD.
+
+---
+
+## 🛠 Requirements
+
+### Hardware:
+- Tiva C Series TM4C123G LaunchPad  
+- 16x2 LCD Display  
+- **LM35DZ Temperature Sensor**  
+- Potentiometer (for LCD contrast adjustment)  
+- Jumper wires  
+
+### Software:
+- **Code Composer Studio (CCS)**  
+- **SharpDevelop**  
+- **TivaWare API Library**
+
+---
+
+## ⚙️ Hardware Connections
+
+### LCD Connections:
+
+| LCD Pin  | TM4C123G LaunchPad Pin |
+|----------|-------------------------|
+| VSS      | GND                     |
+| VDD      | VBUS                    |
+| V0       | Potentiometer           |
+| RS       | PB0                     |
+| RW       | GND                     |
+| E        | PB1                     |
+| D4       | PB4                     |
+| D5       | PB5                     |
+| D6       | PB6                     |
+| D7       | PB7                     |
+| A        | 5V                      |
+| K        | GND                     |
+
+### LM35DZ Connections:
+
+| Sensor Pin | Tiva C LaunchPad Pin |
+|------------|-----------------------|
+| VCC        | 3.3V                  |
+| GND        | GND                   |
+| OUT        | PE3 (ADC input pin)   |
+
+---
+
+## 📂 Project Logic
+
+1. **Clock Setup:**
+   - Time is entered via the SharpDevelop interface.
+   - This time is sent via serial port to Tiva C, shown on the first row of the LCD, and begins counting.
+   - The time is also continuously updated in the SharpDevelop interface.
+
+2. **Temperature Measurement:**
+   - Temperature data is read from the LM35DZ sensor via the ADC module.
+   - The value is displayed on the LCD alongside the time.
+   - It is also transmitted to the SharpDevelop interface for display.
+
+3. **Text Display:**
+   - When a message is entered in SharpDevelop, it is shown on the second row of the LCD.
+
+---
+
+## 📄 File Structure
+
+- **main.c:** Main control code for Tiva C  
+- **lcd.h:** Header file for LCD control  
+- **lcd.c:** Functions for LCD communication via GPIO  
+
+---
+
+## 🚀 Setup and Execution
+
+1. **Connect the Hardware:**
+   Connect the LCD, LM35DZ sensor, and other components to the Tiva C LaunchPad according to the table above.
+
+2. **Compile and Upload the Code:**
+   - Open the project in Code Composer Studio  
+   - Compile and upload it to the Tiva C  
+
+3. **SharpDevelop Interface:**
+   - Open and run the SharpDevelop project  
+   - Select the COM port to which the Tiva C is connected  
+
+4. **Run:**
+   - Enter time and text in SharpDevelop  
+   - Observe synchronized updates on both the LCD and SharpDevelop interface  
+
+---
+
+<img width="432" alt="image" src="https://github.com/user-attachments/assets/cc353177-a796-4678-8aab-b9025833c01e" />
+
+
+
+
+
+
+
+---
+
+## 🇹🇷 TÜRKÇE 
+
+---
+
 # Tiva C Serisi TM4C123G LaunchPad ile SharpDevelop ve Seri Port Haberleşmesi
 
 Bu proje, **Tiva C Serisi TM4C123G LaunchPad** ve **SharpDevelop** ortamı kullanılarak gerçekleştirilen bir seri haberleşme uygulamasını içerir. Projede, saat ve metin bilgilerinin LCD ve SharpDevelop arasında senkronize edilmesi, ayrıca **LM35DZ sıcaklık sensörü** ile sıcaklık ölçümü yapılması sağlanmaktadır.
@@ -39,20 +168,20 @@ Bu proje, **Tiva C Serisi TM4C123G LaunchPad** ve **SharpDevelop** ortamı kulla
 ## ⚙️ Donanım Bağlantıları
 
 ### LCD Bağlantıları:
-| LCD      | TM4C123G LaunchPad       |
-|----------|--------------------------|
-| VSS      | GND                      |
-| VDD      | VBUS                     |
-| V0       | Potentiometer            |
-| RS       | PB0                      |
-| RW       | GND                      |
-| E        | PB1                      |
-| D4       | PB4                      |
-| D5       | PB5                      |
-| D6       | PB6                      |
-| D7       | PB7                      |
-| A        | 5V                       |
-| K        | GND                      |
+| LCD Pin  | TM4C123G LaunchPad Pin |
+|----------|-------------------------|
+| VSS      | GND                     |
+| VDD      | VBUS                    |
+| V0       | Potansiyometre          |
+| RS       | PB0                     |
+| RW       | GND                     |
+| E        | PB1                     |
+| D4       | PB4                     |
+| D5       | PB5                     |
+| D6       | PB6                     |
+| D7       | PB7                     |
+| A        | 5V                      |
+| K        | GND                     |
 
 
 ### LM35DZ Bağlantıları:

@@ -1,26 +1,14 @@
-/*!
- * @author      Yash Bansod
- * @date        18th September 2017
- *
- * @brief       FPU Co-Processor
- * @details     The program enables the Floating Point Unit Co-Processor which is
- *              used to calculate a sine wave with a specified number of sampling points.
- *
- * @note        The code instructs the compiler to use the peripheral driver
- *              library from the ROM of the microcontroller instead of including it
- *              as part of the code and unnecessarily wasting Flash memory.
- */
-/* -----------------------          Include Files       --------------------- */
+
 #define TARGET_IS_BLIZZARD_RB1
-#include <stdint.h>                         // Library of Standard Integer Types
-#include <stdbool.h>                        // Library of Standard Boolean Types
-#include <math.h>                           // Library for Math functions
-#include "inc/tm4c123gh6pm.h"               // Definitions for interrupt and register assignments on Tiva C
-#include "inc/hw_memmap.h"                  // Macros defining the memory map of the Tiva C Series device
-#include "inc/hw_types.h"                   // Defines common types and macros
-#include "driverlib/sysctl.h"               // Defines and macros for System Control API of DriverLib
-#include "driverlib/fpu.h"                  // Prototypes for floating point manipulation routine
-#include "driverlib/rom.h"                  // Defines and macros for ROM API of driverLib
+#include <stdint.h>                        
+#include <stdbool.h>                        
+#include <math.h>                           
+#include "inc/tm4c123gh6pm.h"               
+#include "inc/hw_memmap.h"                  
+#include "inc/hw_types.h"                   
+#include "driverlib/sysctl.h"              
+#include "driverlib/fpu.h"                  
+#include "driverlib/rom.h"                  
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846         // Define M_PI if not already defined
@@ -28,13 +16,11 @@
 
 #define SERIES_LENGTH 100                   // Define SERIES_LENGTH equal to no. of sample points
 
-/* -----------------------      Global Variables        --------------------- */
+
 float gSeriesData[SERIES_LENGTH];           // Create an array of floating point numbers of specified size
 int32_t i32DataCount = 0;                   // Create a variable to keep track of number of points sampled
 
-/* -----------------------      Function Prototypes     --------------------- */
 
-/* -----------------------          Main Program        --------------------- */
 int main(void){
     // Create a temporary variable to store value of one sampling point in radians
     float fRadians;
@@ -57,4 +43,3 @@ int main(void){
     while(1);
 }
 
-/* -----------------------      Function Definition     --------------------- */
